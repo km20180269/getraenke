@@ -1,0 +1,247 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Navigation */
+nav {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  flex-direction: reverse;
+  justify-content: space-around;
+  font-size: 125%;
+  top: 0;
+  left: 0;
+  position: sticky;
+  background-color: #152836;
+  transition: .5s ease-in-out;
+  opacity: 1;
+  z-index: 99;
+}
+
+nav span {
+  letter-spacing: 2px;
+  font-size: 100%;
+  display: flex;
+  color: white;
+}
+nav ul {
+  display: flex;
+  flex-direction: reverse;
+  list-style-type: none;
+}
+
+nav ul li, nav ul li a {
+  display: flex;
+  margin: 0 20px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover, nav ul li a:hover {
+  cursor: pointer;
+  color: #486491;
+  opacity: .9;
+}
+
+/* Section */
+section {
+  width: 100%;
+  min-height: 90vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1, h2, h3, p {
+  margin: 20px;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  font-size: 1.5em;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  display: flex;
+  background: #efefef url("../img/homePic.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* color: #41ab6b; */
+  /* opacity: .5; */
+  /* color: black; */
+  font-weight: bold;
+  /* color: #07254a; */
+  color: #084b9e;
+  /* color: #228238; */
+  /* color: #1b632b; */
+  /* color: #015213; */
+/* color: #4d6e96; */
+  /* color: #1356a8; */
+}
+
+#home p {
+  width: 50%;
+  opacity: 1;
+  box-shadow: 5px 5px 15px 4px black;
+  /* margin: 20px; */
+}
+
+#home h1, #home h3 {
+  opacity: 1;
+  box-shadow: 5px 5px 15px 4px black;
+  /* box-shadow: 1px 1px 9px 0px #dbdbdb; */
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+  #home {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: justify;
+  }
+  
+  #home p {
+    width: 80%;
+  }
+}
+
+/* Getränke Section */
+#getraenke {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 600px));
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#getraenke img {
+  width: 100%;
+}
+
+#getraenke img:hover {
+  cursor: pointer;
+}
+
+#ratsherrnInfo, #maerznInfo, #schlaeglInfo, #zipferInfo {
+  display: none;
+}
+
+#ratsherrnInfo:hover, #maerznInfo:hover, #schlaeglInfo:hover, #zipferInfo:hover {
+  display: grid;
+}
+
+/* Slideshow */
+#slideshowSection {
+  min-height: 100vh;
+}
+
+#images {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#images img {
+  width: 60vw;
+  position: relative;
+  transition: opacity 250ms ease-out;
+}
+
+#iconWrapper {
+  width: 60vw;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#overflowWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 5px 15px 0px;
+}
+
+.imgAnimation {
+  animation: imageTransition 12000ms linear;
+}
+
+#iconWrapper i {
+  font-size: 2vw;
+  margin: 0 1vw;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+#arrowRight {
+  position: absolute;
+  right: 0;
+  animation: arrowRightAnim 1000ms ease-in-out infinite;
+}
+
+#arrowLeft {
+  position: absolute;
+  left: 0;
+  animation: arrowLeftAnim 1000ms ease-in-out infinite;
+}
+
+@keyframes imageTransition {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes arrowLeftAnim {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 10px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes arrowRightAnim {
+  0% {
+    right: 0;
+  }
+  50% {
+    right: 10px;
+  }
+  100% {
+    right: 0;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michael Kogler"></meta>
+    <title>Getränke</title>
+    <link rel="icon" href="../img/favIcon.jpg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/form.css">
+    <script src="../script/form.js"></script>
+    <!-- <script src="../script/scroll.js"></script> -->
+</head>
+<body>
+    <nav>
+        <span>Michael Kogler</span>
+        <ul>
+            <li id='homeNav'>
+                <a href="../index.html">Home</a>
+            </li>
+            <!-- <li id='getraenkeNav'>
+                <a href="../index.html">Gallerie</a>
+            </li>
+            <li id='slideshowNav'>
+                <a href="../index.html">Slideshow</a>
+            </li> -->
+            <li id='getraenkeNav'>
+                <a href="">Getränk hinzufügen</a> 
+            </li>
+        </ul>
+    </nav>
+
+    <section id="formSection">
+        <form id="form">
+            <h2>Getränk hinzufügen</h2>
+            <input type="text" id="name" placeholder="Name" pattern="[a-zA-Z]{4,}">
+            <span id="nameFDB"> &nbsp; </span>
+            <div id="buttonWrapper">
+                <input type="submit" class="button" value="Erstellen">
+                <input type="button" id="infos" class="button" value="Informationen">
+            </div>
+        </form>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LkocouB6dMg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</body>
+</html>

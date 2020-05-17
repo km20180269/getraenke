@@ -1,0 +1,10 @@
+@media print {
+    body {
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    #zipfer, #schlaegl, #ratsherrn, #marzn {
+        display: none;
+    }
+}
