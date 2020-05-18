@@ -86,33 +86,21 @@ h1, h2, h3, p {
   align-items: center;
   min-height: 90vh;
   display: flex;
-  background: #efefef url("../img/homePic.jpg") no-repeat;
+  background: #efefef url("../img/homeBackgroundimage.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
-  /* color: #41ab6b; */
-  /* opacity: .5; */
-  /* color: black; */
   font-weight: bold;
-  /* color: #07254a; */
   color: #084b9e;
-  /* color: #228238; */
-  /* color: #1b632b; */
-  /* color: #015213; */
-/* color: #4d6e96; */
-  /* color: #1356a8; */
 }
 
 #home p {
   width: 50%;
-  opacity: 1;
   box-shadow: 5px 5px 15px 4px black;
-  /* margin: 20px; */
+  margin: 10px;
 }
 
 #home h1, #home h3 {
-  opacity: 1;
   box-shadow: 5px 5px 15px 4px black;
-  /* box-shadow: 1px 1px 9px 0px #dbdbdb; */
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
